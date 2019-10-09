@@ -3,8 +3,8 @@ import MuseScore 3.0
 import QtQuick.Dialogs 1.1
 
 MuseScore {
-      menuPath: "Plugins.RehearsalMarks.Delete"
-      description: "This plugin removes rehearsal marks."
+      menuPath: "Plugins.DeleteAllSimilarElements"
+      description: "This plugin deletes all similar elements in a score: select a single layout break and launch it (I like the shortcut ctrl+shift+delete)."
       version: "1.0"
       requiresScore: true
       onRun: {
