@@ -4,7 +4,7 @@ import QtQuick.Dialogs 1.1
 
 MuseScore {
       menuPath: "Plugins.DeleteAllSimilarElements"
-      description: "This plugin deletes all similar elements in a score: select a single layout break and launch it (I like the shortcut ctrl+shift+delete)."
+      description: "This plugin deletes all similar elements in a score: select a single element and launch it (I like the shortcut ctrl+shift+delete)."
       version: "1.0"
       requiresScore: true
       onRun: {
@@ -38,7 +38,7 @@ MuseScore {
             id: selectionError
             visible: false
             title: qsTr("Plugin selection error")
-            text: qsTr("Please select a rehearsal mark before running this plugin.")
+            text: qsTr("Please select at least one element before running this plugin.")
             onAccepted: {
                   Qt.quit()
             }
